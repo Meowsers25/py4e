@@ -20,11 +20,22 @@
 # print("Done!")
 #
 
-while True:
-    line = input("> ")
-    if line[0] == '#':
-        continue
-    if line == 'done':
-        break
-    print(line)
-print("Done!")
+# while True:
+#     line = input("> ")
+#     if line[0] == '#':
+#         continue
+#     if line == 'done':
+#         break
+#     print(line)
+# print("Done!")
+
+# Definite loops are for loops; they execute an exact number of times
+
+for i in [5, 4, 3, 2, 1]:  # i is called the iteration variable
+    print(i)
+print("Blastoff!")
+
+pets = ["Luna", "Beatrice", "Sully"]
+for pet in pets:
+    print("Hello,", pet)
+print("Done")
