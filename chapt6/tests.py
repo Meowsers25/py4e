@@ -46,6 +46,44 @@
 # print(greet)
 # print('Hi There'.lower())
 
-stuff = 'Hello World'
-print(type(stuff))
-print(dir(stuff))
+# stuff = 'Hello World'
+# print(type(stuff))
+# print(dir(stuff))
+
+# fruit = 'banana'
+# pos = fruit.find('na')
+# print(pos)
+# aa = fruit.find('z')
+# print(aa)
+
+# greet = 'Hello B'
+# nn = greet.upper()
+# print(nn)
+# ww = greet.lower()
+# print(ww)
+
+# search and replace; replace replaces all instances
+# greet = 'Hello B'
+# rep = greet.replace('B', 'Luna')
+# print(rep)
+# new = greet.replace('o', 'X')
+# print(new)
+
+# remove whitespace
+# greet = '    Hello World          '
+# print(greet.lstrip())
+# print(greet.rstrip())
+# print(greet.strip())
+
+# prefixes
+# greet = 'Please have a nice day'
+# print(greet.startswith('Please'))
+# print(greet.startswith('p'))
+
+data = 'From katie.knochles@rfl.org Sun Aug 12 10:23:16 2018'
+atpos = data.find('@')
+print(atpos)
+sppos = data.find(' ', atpos)  # finds the ' ' after the atpos position
+print(sppos)
+host = data[atpos+1: sppos]  # starts at atpos +1 and finishes but doesnt include the space
+print(host)
