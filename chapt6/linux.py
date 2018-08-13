@@ -1,1 +1,2 @@
 print('Try ')
+print('aliases')
