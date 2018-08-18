@@ -32,6 +32,18 @@
 
 # range function returns 0 up to/not including the num
 # print(range(4))
-friends = ['Luna', 'B', 'Sully']
-print(len(friends))
-print(range(len(friends)))
+# friends = ['Luna', 'B', 'Sully']
+# print(len(friends))
+# print(range(len(friends)))
+
+# concatenate lists
+# a = [1, 2, 3]
+# b = [4, 5, 6]
+# c = a + b
+# print(c)
+
+# list slicing
+t = [46, 34, 4, 2, 8, 5]
+print(t[1:3])
+print(t[2:])
+print(t[:4])
