@@ -36,4 +36,4 @@ for line in fhand:
     # using 'or'
     if len(words) == 0 or words[0] != 'From':
         continue
-    print(words[2])
+    print(words[1])
