@@ -29,10 +29,40 @@
 # for k, v in sorted(d.items()):
 #     print(k, v)
 
-c = {'a': 1, 'c': 233, 'b': 10}
-temp = list()
-for k, v in c.items():
-    temp.append((v, k))
-print(temp)
-temp = sorted(temp, reverse=True)
-print(temp)
+# c = {'a': 1, 'c': 233, 'b': 10}
+# temp = list()
+# for k, v in c.items():
+#     temp.append((v, k))
+# print(temp)
+# temp = sorted(temp, reverse=True)
+# print(temp)
+
+# m = ['have', 'fun']
+# # left side assignment; dont use parens
+# x, y = m
+# print(x)
+# print(y)
+# # you can swap values
+# x, y = y, x
+# print(x, y)
+
+# addr = 'monty@python.org'
+# x, y = addr.split('@')
+# print(y)
+# print(x)
+
+# d = {'a': 10, 'b': 233, 'c': 25}
+# t = list(d.items())
+# t.sort()
+# # print(t)
+# for key, val in t:
+#     print(val, key)
+
+# same exercise, sorting values
+d = {'a': 10, 'b': 233, 'c': 25}
+l = list()
+for k, v in d.items():
+    l.append((v, k))
+# print(l)
+l.sort(reverse=True)
+print(l)
