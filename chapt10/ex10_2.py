@@ -4,15 +4,15 @@ for line in fhand:
     line = line.rstrip()
     words = line.split()
     if len(words) != 0 and words[0] == 'From':
-        # print(line)
-        emails[words[1]] = emails.get(words[1], 0) + 1
+        # print(words[5])
+        hours = words[5]
+        emails[hours[:2]] = emails.get(hours[:2], 0) + 1
 # print(emails)
 lst = list()
 for k, v in emails.items():
-    newtup = (v, k)
+    newtup = (k, v)
     lst.append(newtup)
-    # print(newtup)
-lst = sorted(lst, reverse=True)
+lst = sorted(lst)
 # print(lst)
-for v, k in lst[:1]:
+for k, v in lst:
     print(k, v)
