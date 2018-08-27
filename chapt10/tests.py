@@ -59,10 +59,13 @@
 #     print(val, key)
 
 # same exercise, sorting values
-d = {'a': 10, 'b': 233, 'c': 25}
-l = list()
-for k, v in d.items():
-    l.append((v, k))
+# d = {'a': 10, 'b': 233, 'c': 25}
+# l = list()
+# for k, v in d.items():
+#     l.append((v, k))
+# # print(l)
+# l.sort(reverse=True)
 # print(l)
-l.sort(reverse=True)
-print(l)
+
+d = {'a': 10, 'b': 233, 'c': 25}
+print(sorted([(v, k) for k, v in d.items()], reverse=True))
