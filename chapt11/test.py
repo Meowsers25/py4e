@@ -76,6 +76,27 @@ import re
 # # print(words)
 
 # regex way
-data = 'From stephen.marquard@uct.ac.za Sat Jann 4 09:12:15 2018'
-y = re.findall('@([^ ]*)', data)
+# data = 'From stephen.marquard@uct.ac.za Sat Jann 4 09:12:15 2018'
+# y = re.findall('@([^ ]*)', data)
+# print(y)
+
+# even cooler way
+# data = 'From stephen.marquard@uct.ac.za Sat Jann 4 09:12:15 2018'
+# y = re.findall('^From .*@([^ ]*)', data) # refines to lines we only want
+# print(y)
+
+# program to put it all together
+# hand = open('mbox-short.txt')
+# numlist = list()
+# for line in hand:
+#     line = line.rstrip()
+#     stuff = re.findall('^X-DSPAM-Confidence: ([0-9.]+)', line)
+#     if len(stuff) != 1:
+#         continue
+#     num = float(stuff[0])
+#     numlist.append(num)
+# print('Maximum: ', max(numlist))
+
+x = 'We just received $10.00 for cookies'
+y = re.findall('\$[0-9.]+', x) # real $ one or more digits and dots
 print(y)
