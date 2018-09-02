@@ -75,7 +75,10 @@ import re
 # print(pieces[0])
 # # print(words)
 
-# regex way
+# # regex way
+# data = 'From stephen.marquard@uct.ac.za Sat Jann 4 09:12:15 2018'
+# y = re.findall('@([^ ]*)', data)
+# print(y)
+
+# even cooler regex way
 data = 'From stephen.marquard@uct.ac.za Sat Jann 4 09:12:15 2018'
-y = re.findall('@([^ ]*)', data)
-print(y)
